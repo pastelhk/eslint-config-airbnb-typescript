@@ -12,6 +12,7 @@
   "bugs": {
     "url": "https://github.com/iamturns/eslint-config-airbnb-typescript/issues"
   },
+  "main": "index.mjs",
   "scripts": {
     "format": "run-s format:package format:prettier format:eslint",
     "format:eslint": "eslint --fix ./ >/dev/null 2>&1 || true",
@@ -23,18 +24,18 @@
     "validate": "npm run lint"
   },
   "dependencies": {
-    "@pasteltech/eslint-config-airbnb-base": "^16.0.0",
+    "@stylistic/eslint-plugin": "^2.13.0",
+    "eslint-config-airbnb": "^20.0.0",
+    "eslint-config-airbnb-base": "^16.0.0",
     "eslint-config-prettier": "^10.0.0",
-    "eslint-plugin-import": "^2.31.0"
+    "eslint-plugin-import": "^2.31.0",
+    "typescript-eslint": "^8.21.0"
   },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "^8.0.0",
-    "@typescript-eslint/parser": "^8.0.0",
-    "eslint": "^9.18.0"
+    "eslint": "^9.18.0",
+    "typescript-eslint": "^8.21.0"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "8.20.0",
-    "@typescript-eslint/parser": "8.20.0",
     "doctoc": "2.2.1",
     "eslint": "9.18.0",
     "eslint-config-prettier": "10.0.1",
