@@ -1,4 +1,4 @@
-import airbnbBase from 'eslint-config-airbnb-base';
+import airbnbBase from '@pasteltech/eslint-config-airbnb-base';
 import eslintConfigPrettier from 'eslint-config-prettier';
 import base from './base.mjs';
 
