@@ -1,8 +1,12 @@
+import react from 'eslint-plugin-react';
 import shared from './lib/shared.mjs';
 
 export default [
   ...shared,
   {
+    plugins: {
+      react,
+    },
     settings: {
       // Append 'ts' extensions to Airbnb 'import/resolver' setting
       // Prepend 'mjs' to match shared config

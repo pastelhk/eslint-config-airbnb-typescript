@@ -1,6 +1,6 @@
 import base from './base.mjs';
 import pkg from './package.json' with { type: 'json' };
-import recommended from './recommended.mjs';
+import react from './react.mjs';
 
 export default {
   meta: {
@@ -8,7 +8,7 @@ export default {
     version: pkg.version,
   },
   configs: {
-    recommended,
+    react,
     base,
   },
 };
